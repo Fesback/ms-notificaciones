@@ -169,6 +169,7 @@ public class NotificacionServiceImpl implements NotificacionService {
                     "    </div>" +
                     "</body>" +
                     "</html>";
+            helper.setText(html, true);
             mailSender.send(mensaje);
 
         } catch (MessagingException e) {
